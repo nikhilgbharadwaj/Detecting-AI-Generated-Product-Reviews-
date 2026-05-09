@@ -37,9 +37,6 @@ ollama list                    # should show 4 models
 ollama run llama3.1:8b "hi"    # should respond quickly, GPU usage spikes
 ```
 
-With an RTX 5070, expect ~30-80 tokens/sec on 7-8B models. If generation feels slow,
-confirm Ollama is using the GPU: `nvidia-smi` should show `ollama` using VRAM.
-
 ## Pipeline (run in order)
 
 ```bash
