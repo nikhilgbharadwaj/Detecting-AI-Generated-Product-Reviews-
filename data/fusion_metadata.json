@@ -1,0 +1,42 @@
+{
+  "features": [
+    "distilbert_prob",
+    "perplexity",
+    "mean_sentence_perplexity",
+    "burstiness",
+    "type_token_ratio",
+    "mean_sentence_length",
+    "std_sentence_length",
+    "mean_word_length",
+    "punctuation_density",
+    "exclamation_ratio",
+    "question_ratio",
+    "caps_ratio",
+    "generic_adjective_ratio",
+    "hedging_ratio",
+    "first_person_ratio",
+    "digit_ratio",
+    "word_count",
+    "rule_template_hits",
+    "rule_buyer_persona_phrases",
+    "rule_starts_with_rating",
+    "rule_markdown_artifacts",
+    "rule_pros_cons_structure",
+    "rule_superlative_density",
+    "rule_sentiment_rating_mismatch",
+    "rule_emoji_count",
+    "rule_avg_paragraph_perfection",
+    "rule_near_duplicate",
+    "rule_max_jaccard"
+  ],
+  "best_threshold": 0.49,
+  "test_metrics_at_best": {
+    "thr": 0.49,
+    "acc": 0.9726484322881921,
+    "prec": 0.9730382293762575,
+    "rec": 0.9773645917542442,
+    "f1": 0.9751966122202057,
+    "fpr": 0.033119130004943154,
+    "auc": 0.9968249128554366
+  }
+}
