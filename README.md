@@ -1,7 +1,11 @@
 # AI Review Detector — Data Pipeline
 
 Local VS Code project to build training data for the AI review detector.
-Replaces the Colab notebook with a proper Python project.
+
+Group 24
+Ganesh Prasad D M (MT24AAI161)
+Nikhil G Bharadwaj (MT24AAC003)
+Nandisha K S (MT24AAC032)
 
 ## One-time setup
 
