@@ -11,9 +11,6 @@ Download from https://ollama.com and install. Then pull the models:
 
 ```bash
 ollama pull llama3.1:8b
-ollama pull mistral:7b
-ollama pull qwen2.5:7b
-ollama pull phi3:mini
 ```
 
 Models live in `~/.ollama/models` and persist across reboots.
@@ -36,29 +33,30 @@ pip install -r requirements.txt
 ollama list                    # should show 4 models
 ollama run llama3.1:8b "hi"    # should respond quickly, GPU usage spikes
 ```
-
-## Pipeline (run in order)
-
+### 4. Run 12_app.py
 ```bash
-python 1_explore.py         # sanity check the base dataset
-python 2_generate.py        # generate augmented AI reviews (long, resumable)
-python 3_clean.py           # filter refusals, dedupe, length-check
-python 4_split.py           # merge, split train/val/test, hold out one generator
-python 5_upload.py          # (optional) push splits to your HF dataset repo
+Run below in the command prompt window
+.venv\...\streamlit run 12_app.py
 ```
+### 5. Enter the customer review
+```bash
+Enter the customer review in the text box provided.
+```
+<img width="2553" height="1337" alt="image" src="https://github.com/user-attachments/assets/6a9d8e1f-737d-4010-851a-00b83c850075" />
 
-Output files land in `./data/`.
+<img width="2539" height="1316" alt="image" src="https://github.com/user-attachments/assets/c575432b-e92e-47c1-b366-44a32b0a1d82" />
 
-## Resuming generation
+<img width="2518" height="1294" alt="image" src="https://github.com/user-attachments/assets/554e0814-753c-4f10-8f5f-0bb538ea15a2" />
 
-`2_generate.py` checkpoints every 50 successful samples to `data/augmented_raw.csv`.
-If it crashes or you stop it, re-run — it resumes from the last checkpoint
-automatically.
+<img width="2528" height="1310" alt="image" src="https://github.com/user-attachments/assets/fc061981-5519-4aa7-814f-f3431274edce" />
 
-To force a fresh run: delete `data/augmented_raw.csv`.
+<img width="2338" height="1351" alt="image" src="https://github.com/user-attachments/assets/78c0d65a-e2a5-4415-bf45-9a3fc3239dd9" />
 
-## Target
+<img width="2528" height="1313" alt="image" src="https://github.com/user-attachments/assets/d8432213-31a3-492a-b8a9-dc490863e9c3" />
 
-6,000 samples across 4 models, 10 categories, varied prompts/temps/lengths.
-Expect ~4-8 hours on an RTX 5070 depending on length mix.
+
+
+
+
+
 
