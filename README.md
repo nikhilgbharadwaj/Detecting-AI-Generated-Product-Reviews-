@@ -1,6 +1,4 @@
-# AI Review Detector — Data Pipeline
-
-Local VS Code project to build training data for the AI review detector.
+# Detection of AI Generated Product Reviews
 
 Group 24
 
